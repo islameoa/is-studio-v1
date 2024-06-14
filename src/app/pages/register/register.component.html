@@ -1,0 +1,15 @@
+<img src="https://i.ibb.co/rt3HybH/close.png" alt="close dialog" (click)="closeRegisterDialog()" class="toggle">
+<div class="register">
+  <h1>Register</h1>
+  <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+    <input type="text" name="user" placeholder="Username" id="validationUsername" formControlName="username">
+    <div id="vuser"></div>
+    <input type="email" name="email" placeholder="Email" id="validationEmail" formControlName="email">
+    <div id="vemail"></div>
+    <input type="password" name="pwd" placeholder="Password" id="validationPwd" formControlName="pwd">
+    <div id="vpwd"></div>
+    <input type="password" name="pwd2" placeholder="Repeat the password" id="validationPwd2" formControlName="pwd2">
+    <div id="vpwd2"></div>
+    <button type="submit">Continue</button>
+  </form>
+</div>

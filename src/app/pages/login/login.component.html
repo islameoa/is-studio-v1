@@ -1,0 +1,11 @@
+<img src="https://i.ibb.co/rt3HybH/close.png" alt="close dialog" (click)="closeLoginDialog()" class="toggle">
+<div class="login">
+  <h1>Login</h1>
+  <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+    <input type="text" name="useremail" placeholder="Username or email" id="validationUseremail" formControlName="username">
+    <div id="vuser"></div>
+    <input type="password" name="pwd" placeholder="Password" id="validationPwd" formControlName="pwd">
+    <div id="vpwd"></div>
+    <button type="submit">Continue</button>
+  </form>
+</div>
